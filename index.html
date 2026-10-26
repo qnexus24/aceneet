@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07142c">
+<meta name="description" content="FutureMed Intelligence — Global Summit on Clinical Reasoning, Cognitive Excellence & AI. Concept note and summit framework.">
+<title>FutureMed Intelligence | Global Summit</title>
+<style>
+:root{--navy:#07142c;--navy2:#0b2144;--blue:#28c8f4;--cyan:#74f0f0;--violet:#a18aff;--ink:#17243b;--muted:#5b6a80;--paper:#f5f8fc;--line:#dce5f0;--white:#fff;--shadow:0 18px 50px rgba(4,19,46,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.65}a{color:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(7,20,44,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.12);color:white}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.04em}.brand-mark{width:37px;height:37px;border:1px solid var(--blue);border-radius:12px;display:grid;place-items:center;color:var(--cyan);font-size:20px;background:linear-gradient(135deg,rgba(40,200,244,.2),rgba(161,138,255,.15))}.brand small{display:block;font-size:10px;font-weight:600;letter-spacing:.12em;color:#a8c7e7}.navlinks{display:flex;gap:22px;align-items:center;font-size:13px;color:#d4e2f5}.navlinks a{text-decoration:none}.navlinks a:hover{color:var(--cyan)}.nav-cta{padding:10px 15px;border:1px solid rgba(116,240,240,.55);border-radius:99px;color:var(--cyan)!important}
+.hero{position:relative;overflow:hidden;color:white;background:radial-gradient(ellipse at 70% 30%,rgba(29,108,201,.42),transparent 40%),radial-gradient(ellipse at 20% 90%,rgba(109,62,194,.24),transparent 45%),linear-gradient(135deg,#061127 0%,#0a1e40 58%,#07142c 100%);padding:88px 0 68px}
+.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(108,191,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(108,191,255,.06) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,black,transparent 92%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:48px;align-items:center;position:relative}.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--cyan);font-weight:800}.eyebrow:before{content:"";height:2px;width:27px;background:var(--cyan)}h1{font-size:clamp(44px,6vw,78px);line-height:.98;letter-spacing:-.055em;margin:22px 0 18px;font-weight:850}h1 span{color:var(--blue)}.hero h2{font-size:clamp(18px,2.2vw,25px);line-height:1.35;max-width:650px;margin:0;color:#e5f1ff;font-weight:600}.tagline{font-size:16px;color:var(--cyan);font-weight:700;margin:22px 0}.hero-copy{max-width:660px;color:#c4d4e8;font-size:15px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:13px 18px;border-radius:10px;text-decoration:none;font-size:13px;font-weight:800;transition:.2s}.btn-primary{background:linear-gradient(100deg,#27c8f4,#6fe7ed);color:#07142c;box-shadow:0 8px 25px rgba(39,200,244,.2)}.btn-secondary{border:1px solid rgba(255,255,255,.28);color:white}.btn:hover{transform:translateY(-2px)}
+.stage{min-height:390px;position:relative;display:grid;place-items:center}.orb{position:absolute;width:min(360px,90%);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 50%,rgba(49,216,248,.22),rgba(47,112,219,.08) 45%,transparent 68%);border:1px solid rgba(72,207,255,.35);box-shadow:0 0 70px rgba(25,154,255,.16),inset 0 0 50px rgba(54,177,255,.1);animation:float 7s ease-in-out infinite}.orb:before,.orb:after{content:"";position:absolute;inset:10%;border:1px solid rgba(103,222,255,.32);border-radius:50%;transform:rotateX(65deg) rotateZ(25deg)}.orb:after{inset:20%;transform:rotateX(65deg) rotateZ(-35deg)}.core{position:relative;width:190px;height:190px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:linear-gradient(145deg,rgba(40,200,244,.2),rgba(83,65,175,.25));border:1px solid rgba(116,240,240,.8);box-shadow:0 0 45px rgba(40,200,244,.22);z-index:2}.core .brain{font-size:42px;line-height:1}.core strong{font-size:16px;margin-top:8px}.core small{font-size:10px;color:#b9d7f0;letter-spacing:.12em;text-transform:uppercase}.float-card{position:absolute;z-index:3;padding:12px 15px;background:rgba(7,25,54,.85);border:1px solid rgba(91,205,246,.36);border-radius:12px;box-shadow:0 10px 28px rgba(0,0,0,.2);font-size:12px;color:#d9ecff;backdrop-filter:blur(10px)}.float-card b{display:block;color:var(--cyan);font-size:11px;text-transform:uppercase;letter-spacing:.08em}.fc1{top:12%;left:0}.fc2{top:19%;right:0}.fc3{bottom:17%;left:2%}.fc4{bottom:10%;right:1%}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.sponsorbar{background:#fff;border-bottom:1px solid var(--line)}.sponsors{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:18px 0;flex-wrap:wrap}.sponsor{font-size:12px;color:var(--muted)}.sponsor strong{color:var(--ink);font-size:14px}
+section{padding:76px 0}.section-head{max-width:760px;margin-bottom:30px}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.17em;color:#087fa7;font-weight:850}.section-head h2{font-size:clamp(29px,4vw,43px);line-height:1.12;letter-spacing:-.035em;margin:10px 0 12px;color:#102344}.section-head p{color:var(--muted);margin:0;font-size:15px}.vision-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.feature{padding:27px;border-radius:18px;background:white;border:1px solid var(--line);box-shadow:0 8px 25px rgba(15,40,80,.04)}.feature h3{margin:0 0 8px;font-size:18px;color:#102344}.feature p{margin:0;color:var(--muted);font-size:14px}.big-question{margin-top:22px;padding:27px 30px;border-radius:16px;background:linear-gradient(115deg,#0a1e40,#12376b);color:white;font-size:clamp(18px,2.4vw,25px);font-weight:750;line-height:1.4}.big-question span{color:var(--cyan)}
+.pillars{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.pillar{background:white;border:1px solid var(--line);border-radius:16px;padding:21px 17px;box-shadow:0 8px 24px rgba(15,40,80,.04);position:relative;overflow:hidden}.pillar:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,var(--blue),var(--violet))}.num{font-size:11px;letter-spacing:.15em;color:#138bb2;font-weight:850}.pillar h3{font-size:16px;line-height:1.3;margin:12px 0 9px;color:#102344}.pillar p{font-size:12.5px;line-height:1.6;color:var(--muted);margin:0}
+.program{background:#eaf1f9}.program-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.program-item{display:flex;gap:14px;padding:19px;background:white;border:1px solid #dbe5f0;border-radius:13px}.program-icon{flex:0 0 38px;height:38px;border-radius:12px;background:#e1f8fc;color:#087fa7;display:grid;place-items:center;font-weight:900}.program-item h3{font-size:15px;margin:0 0 4px}.program-item p{font-size:13px;color:var(--muted);margin:0}
+.audience{display:flex;flex-wrap:wrap;gap:10px}.chip{padding:10px 14px;border-radius:99px;background:white;border:1px solid var(--line);font-size:13px;font-weight:650;color:#27405f}
+.outputs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.output{border-left:3px solid var(--blue);background:white;border-radius:0 13px 13px 0;padding:18px 20px;box-shadow:0 8px 22px rgba(15,40,80,.04)}.output strong{display:block;font-size:14px;margin-bottom:5px}.output p{margin:0;color:var(--muted);font-size:13px}
+.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.principle{padding:19px;border:1px solid var(--line);border-radius:13px;background:white}.principle strong{display:block;color:#102344;font-size:14px;margin-bottom:5px}.principle p{margin:0;font-size:13px;color:var(--muted)}
+.cta{background:radial-gradient(ellipse at 80% 20%,rgba(40,200,244,.2),transparent 35%),linear-gradient(130deg,#07142c,#0d2b58);color:white;text-align:center;padding:72px 0}.cta h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.04em;line-height:1.1;margin:12px 0}.cta p{color:#c5d8ed;max-width:760px;margin:0 auto 22px}.cta .eyebrow{justify-content:center}
+footer{background:#050e20;color:#a9bdd5;padding:28px 0;font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.foot strong{color:white}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:18px}.stage{min-height:340px}.pillars{grid-template-columns:repeat(2,1fr)}.pillars .pillar:last-child{grid-column:span 2}.outputs{grid-template-columns:repeat(2,1fr)}.principles{grid-template-columns:repeat(2,1fr)}.navlinks{gap:12px}.navlinks a:not(.nav-cta){display:none}}
+@media(max-width:600px){.wrap{width:min(100% - 28px,1160px)}.nav{height:62px}.brand{font-size:12px}.hero{padding:58px 0 42px}.stage{min-height:300px}.core{width:155px;height:155px}.float-card{font-size:10px;padding:9px 10px}.fc1{left:0}.fc2{right:0}.vision-grid,.program-grid,.outputs,.principles{grid-template-columns:1fr}.pillars{grid-template-columns:1fr}.pillars .pillar:last-child{grid-column:auto}section{padding:54px 0}.sponsors{align-items:flex-start;flex-direction:column;gap:8px}.big-question{padding:22px}.hero-copy{font-size:14px}}
+@media print{header,.hero-actions{display:none}.hero{padding:35px 0}.stage{min-height:260px}section{padding:30px 0}body{background:white}.feature,.pillar,.program-item,.output,.principle{box-shadow:none;break-inside:avoid}}
+
+/* Holographic global telepresence concept */
+.telepresence{background:linear-gradient(135deg,#06142c,#0b2450 60%,#10183c);color:#fff;overflow:hidden;position:relative}
+.telepresence:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,rgba(34,198,245,.14),transparent 43%),linear-gradient(rgba(91,176,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(91,176,255,.045) 1px,transparent 1px);background-size:auto,34px 34px,34px 34px;pointer-events:none}
+.telepresence .section-head,.telepresence .tele-grid{position:relative}
+.telepresence .section-head h2{color:#fff}.telepresence .section-head p{color:#bed0e7}.telepresence .kicker{color:var(--cyan)}
+.tele-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center}
+.holo-stage{min-height:440px;border:1px solid rgba(94,220,255,.35);border-radius:24px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 65%,rgba(31,195,255,.18),transparent 43%),linear-gradient(180deg,rgba(8,25,57,.8),rgba(4,13,31,.9));box-shadow:inset 0 0 60px rgba(37,178,255,.08)}
+.holo-stage:before{content:"";position:absolute;left:8%;right:8%;bottom:14%;height:85px;border:1px solid rgba(71,220,255,.65);border-radius:50%;transform:perspective(180px) rotateX(65deg);box-shadow:0 0 28px rgba(42,198,255,.25),inset 0 0 25px rgba(42,198,255,.12)}
+.holo-globe{position:absolute;left:50%;top:43%;width:220px;height:220px;transform:translate(-50%,-50%);border-radius:50%;border:1px solid rgba(73,221,255,.7);background:radial-gradient(circle at 35% 30%,rgba(100,241,255,.18),rgba(21,90,174,.13) 50%,rgba(7,20,48,.2) 70%);box-shadow:0 0 45px rgba(28,183,255,.2),inset 0 0 35px rgba(35,187,255,.14)}
+.holo-globe:before,.holo-globe:after{content:"";position:absolute;inset:9%;border:1px solid rgba(98,218,255,.35);border-radius:50%;transform:rotateY(62deg)}.holo-globe:after{transform:rotateX(64deg)}
+.holo-center{position:absolute;left:50%;top:43%;transform:translate(-50%,-50%);text-align:center;z-index:2;width:150px}
+.holo-center .symbol{font-size:35px;color:var(--cyan);text-shadow:0 0 18px rgba(49,220,255,.8)}.holo-center strong{display:block;font-size:13px;letter-spacing:.1em}.holo-center small{display:block;font-size:9px;color:#a8d7ee;margin-top:4px;text-transform:uppercase;letter-spacing:.14em}
+.holo-person{position:absolute;width:145px;padding:12px 10px 11px;text-align:center;border:1px solid rgba(80,220,255,.5);border-radius:14px;background:linear-gradient(145deg,rgba(16,55,95,.9),rgba(11,22,54,.92));box-shadow:0 0 24px rgba(32,180,255,.13);backdrop-filter:blur(8px);z-index:3}
+.holo-person .avatar{width:54px;height:54px;border-radius:50%;margin:0 auto 8px;display:grid;place-items:center;font-size:23px;color:#c7fbff;border:1px solid rgba(115,235,255,.75);background:radial-gradient(circle at 35% 25%,rgba(78,226,255,.35),rgba(92,91,197,.25));box-shadow:0 0 18px rgba(51,207,255,.18)}
+.holo-person b{display:block;font-size:11px;line-height:1.35;color:#fff}.holo-person span{display:block;color:#86eaf6;font-size:9px;line-height:1.4;margin-top:3px}.holo-person em{display:block;font-style:normal;color:#9fb7d5;font-size:8px;margin-top:5px;text-transform:uppercase;letter-spacing:.08em}
+.hp1{left:4%;top:7%}.hp2{right:4%;top:7%}.hp3{left:1%;top:44%}.hp4{right:1%;top:44%}.hp5{left:20%;bottom:5%}.hp6{right:20%;bottom:5%}
+.tele-side h3{font-size:22px;line-height:1.2;margin:0 0 12px}.tele-side p{color:#c0d1e6;font-size:14px}.tele-points{list-style:none;padding:0;margin:20px 0}.tele-points li{padding:10px 0;border-bottom:1px solid rgba(255,255,255,.12);color:#d8e8f8;font-size:13px}.tele-points li:before{content:"✦";color:var(--cyan);margin-right:10px}
+.demo-note{font-size:11px!important;color:#9fb8d4!important;padding:12px 14px;border:1px dashed rgba(123,216,244,.4);border-radius:10px;background:rgba(9,24,50,.45)}
+@media(max-width:900px){.tele-grid{grid-template-columns:1fr}.holo-stage{min-height:430px}}
+@media(max-width:600px){.holo-stage{min-height:520px}.holo-person{width:125px;padding:9px 6px}.hp1{left:2%;top:4%}.hp2{right:2%;top:4%}.hp3{left:1%;top:38%}.hp4{right:1%;top:38%}.hp5{left:8%;bottom:4%}.hp6{right:8%;bottom:4%}.holo-globe{width:175px;height:175px}.holo-center{top:43%}.holo-person .avatar{width:43px;height:43px}}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand" style="text-decoration:none">
+      <span class="brand-mark">F+</span><span>FUTUREMED <span style="color:#28c8f4">INTELLIGENCE</span><small>GLOBAL SUMMIT</small></span>
+    </a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#mandate">Mandate</a><a href="#telepresence">Global stage</a><a href="#pillars">Pillars</a><a href="#programme">Programme</a><a href="#outcomes">Outcomes</a><a class="nav-cta" href="#contact">Partner with us</a>
+    </nav>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow">A future-facing medical capability summit</div>
+   <h1>FutureMed<br><span>Intelligence</span></h1>
+   <h2>Global Summit on Clinical Reasoning, Cognitive Excellence &amp; AI</h2>
+   <p class="tagline">Beyond Medical Knowledge. Towards Medical Intelligence.</p>
+   <p class="hero-copy">A proposed international platform exploring how medicine, neuroscience, psychology, medical education and responsible AI can work together to develop doctors who think clearly, reason rigorously, adapt continuously and care effectively.</p>
+   <div class="hero-actions"><a class="btn btn-primary" href="#mandate">Explore the summit</a><a class="btn btn-secondary" href="#pillars">Discover the five pillars</a></div>
+  </div>
+  <div class="stage" aria-label="Abstract visual representing medical intelligence and interconnected disciplines">
+   <div class="orb"></div>
+   <div class="core"><div class="brain">✧</div><strong>MEDICAL<br>INTELLIGENCE</strong><small>Human + Science + AI</small></div>
+   <div class="float-card fc1"><b>01 / Cognition</b>Learn · Think · Adapt</div>
+   <div class="float-card fc2"><b>02 / Clinical</b>Reason · Decide</div>
+   <div class="float-card fc3"><b>03 / Technology</b>Augment responsibly</div>
+   <div class="float-card fc4"><b>04 / Human</b>Care · Communicate</div>
+  </div>
+ </div>
+</section>
+<div class="sponsorbar"><div class="wrap sponsors"><div class="sponsor">PRESENTED BY<br><strong>SSSGK Edutech Pvt. Ltd.</strong></div><div class="sponsor">POWERED BY<br><strong>amAize</strong></div><div class="sponsor">FORMAT<br><strong>Global / Hybrid — to be confirmed</strong></div><div class="sponsor">DATE &amp; VENUE<br><strong>To be announced</strong></div></div></div>
+
+<section id="mandate">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">The mandate</div><h2>Develop the doctor.<br>Not just the technology.</h2><p>Tomorrow’s doctors will need more than access to information. They will need to interpret evidence, reason through ambiguity, recognise the limits of their knowledge, work effectively with AI and maintain the trust of the people they serve.</p></div>
+  <div class="vision-grid">
+   <article class="feature"><h3>Our vision</h3><p>To advance the science and practice of developing future-ready doctors who combine strong medical knowledge with clinical reasoning, cognitive agility, adaptive learning, ethical judgement, human understanding and responsible technological fluency.</p></article>
+   <article class="feature"><h3>Our mission</h3><p>To convene international expertise across medicine, neuroscience, psychology, medical education and AI to explore, validate and advance approaches that improve how future doctors learn, think, reason, make decisions and care for patients.</p></article>
+  </div>
+  <div class="big-question">The central question: <span>How can we develop doctors who think better, decide wisely, adapt continuously and care deeply?</span></div>
+ </div>
+</section>
+
+
+<section class="telepresence" id="telepresence">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">The global stage concept</div><h2>One world. One stage. Shared medical intelligence.</h2><p>Imagine global medical leaders, clinicians, neuroscientists and educators joining one immersive holographic roundtable—virtually present from different parts of the world, sharing perspectives in a connected experience.</p></div>
+  <div class="tele-grid">
+   <div class="holo-stage" aria-label="Concept illustration of a holographic global medical roundtable with six placeholder experts">
+    <div class="holo-globe"></div>
+    <div class="holo-center"><div class="symbol">✧</div><strong>FUTUREMED<br>INTELLIGENCE</strong><small>Global holographic forum</small></div>
+    <div class="holo-person hp1"><div class="avatar">⚕</div><b>Dr. Aarya Mehta</b><span>Clinical Reasoning</span><em>Placeholder speaker</em></div>
+    <div class="holo-person hp2"><div class="avatar">⌬</div><b>Prof. Daniel Mercer</b><span>Neuroscience</span><em>Placeholder speaker</em></div>
+    <div class="holo-person hp3"><div class="avatar">✚</div><b>Dr. Leila Haddad</b><span>Medical Education</span><em>Placeholder speaker</em></div>
+    <div class="holo-person hp4"><div class="avatar">◉</div><b>Prof. Kenji Watanabe</b><span>AI in Medicine</span><em>Placeholder speaker</em></div>
+    <div class="holo-person hp5"><div class="avatar">✧</div><b>Dr. Sofia Alvarez</b><span>Cognitive Psychology</span><em>Placeholder speaker</em></div>
+    <div class="holo-person hp6"><div class="avatar">✜</div><b>Dr. Michael Okafor</b><span>Patient Safety</span><em>Placeholder speaker</em></div>
+   </div>
+   <div class="tele-side">
+    <h3>Holographic telepresence. Real global exchange.</h3>
+    <p>A proposed experience that makes the summit feel like a shared global stage rather than a series of disconnected video calls. The concept can be developed in phases, from a visually immersive web stage to integrated live telepresence, subject to technical feasibility and budget.</p>
+    <ul class="tele-points">
+     <li>Virtual presence for international medical leaders and subject-matter experts.</li>
+     <li>Multi-country panel conversations and moderated cross-disciplinary dialogue.</li>
+     <li>Interactive Q&amp;A with medical students, educators and participants.</li>
+     <li>Potential integration of 3D visualisations, clinical simulations and AI demonstrations.</li>
+     <li>Designed to support remote participation without implying that any guest is physically present.</li>
+    </ul>
+    <p class="demo-note"><strong>Illustrative concept only:</strong> All six names and roles shown here are fictional placeholders for layout demonstration. They are not confirmed speakers, endorsements or real participants. Final names, affiliations, likenesses and participation formats will be added only after confirmation and permission.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="pillars" style="background:#fff">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">Summit framework</div><h2>Five strategic pillars</h2><p>An integrated framework linking cognitive science and clinical practice with adaptive learning, AI and the human dimensions of medical excellence.</p></div>
+  <div class="pillars">
+   <article class="pillar"><div class="num">01 / COGNITION</div><h3>Cognitive Excellence</h3><p>Neuroscience of learning, memory, attention, reasoning, cognitive flexibility and cognitive load.</p></article>
+   <article class="pillar"><div class="num">02 / CLINICAL</div><h3>Clinical Intelligence</h3><p>Diagnostic reasoning, differential diagnosis, evidence-based medicine, clinical judgement and decisions under uncertainty.</p></article>
+   <article class="pillar"><div class="num">03 / LEARNING</div><h3>Metacognition &amp; Adaptive Learning</h3><p>Self-assessment, awareness of knowledge gaps, reflective practice, feedback and continuous improvement.</p></article>
+   <article class="pillar"><div class="num">04 / AI</div><h3>AI-Augmented Medicine</h3><p>Intelligent tutoring, medical AI, simulation, digital twins and responsible human oversight.</p></article>
+   <article class="pillar"><div class="num">05 / HUMAN</div><h3>Human-Centred Medical Excellence</h3><p>Empathy, communication, ethical reasoning, cultural sensitivity and patient-centred care.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="program" id="programme">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">Proposed programme</div><h2>From scientific insight to practical application</h2><p>The programme is designed to connect evidence, clinical experience, educational practice and responsible innovation.</p></div>
+  <div class="program-grid">
+   <article class="program-item"><div class="program-icon">01</div><div><h3>Opening plenary</h3><p>The doctor of tomorrow: which capabilities will matter most?</p></div></article>
+   <article class="program-item"><div class="program-icon">02</div><div><h3>Global keynotes</h3><p>Clinical reasoning, cognitive science, medical education and AI augmentation.</p></div></article>
+   <article class="program-item"><div class="program-icon">03</div><div><h3>Expert panels</h3><p>Cognitive overload, patient safety, human judgement and AI-supported medicine.</p></div></article>
+   <article class="program-item"><div class="program-icon">04</div><div><h3>Research sessions</h3><p>Work on cognition, learning, clinical reasoning, simulation, medical AI and assessment.</p></div></article>
+   <article class="program-item"><div class="program-icon">05</div><div><h3>Innovation demonstrations</h3><p>Intelligent tutoring, immersive learning, simulation and AI-enabled education tools.</p></div></article>
+   <article class="program-item"><div class="program-icon">06</div><div><h3>Student &amp; early-career forum</h3><p>Learning strategies, reflective practice, professional identity and future clinical skills.</p></div></article>
+   <article class="program-item"><div class="program-icon">07</div><div><h3>Partnership roundtables</h3><p>Universities, hospitals, researchers and technology providers explore collaboration.</p></div></article>
+   <article class="program-item"><div class="program-icon">08</div><div><h3>Outcomes session</h3><p>Priority research questions, potential partnerships and a post-summit action agenda.</p></div></article>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">Who should participate</div><h2>A cross-disciplinary community</h2><p>Designed for the people who educate, support, research, practise and build the future of medicine.</p></div>
+  <div class="audience">
+   <span class="chip">Medical universities &amp; deans</span><span class="chip">Doctors &amp; clinical specialists</span><span class="chip">Neuroscientists</span><span class="chip">Cognitive psychologists</span><span class="chip">Medical educators</span><span class="chip">Learning-science researchers</span><span class="chip">AI &amp; digital-health innovators</span><span class="chip">Healthcare organisations</span><span class="chip">Policymakers</span><span class="chip">Medical students &amp; NEET aspirants</span><span class="chip">Parents &amp; caregivers</span>
+  </div>
+ </div>
+</section>
+
+<section id="outcomes" style="background:#fff">
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">Intended outcomes</div><h2>Build a platform for continued progress</h2><p>Success will be measured not only by attendance, but by the quality of ideas, collaborations and follow-through.</p></div>
+  <div class="outputs">
+   <article class="output"><strong>Shared priorities</strong><p>A FutureMed Intelligence statement on future-ready medical capability development.</p></article>
+   <article class="output"><strong>Research agenda</strong><p>Priority questions and possible studies across cognition, clinical reasoning, learning and AI.</p></article>
+   <article class="output"><strong>Academic partnerships</strong><p>Connections between medical schools, hospitals, researchers and educators.</p></article>
+   <article class="output"><strong>Innovation evaluation</strong><p>Showcases of educational tools with opportunities for evaluation or pilot studies.</p></article>
+   <article class="output"><strong>Post-summit report</strong><p>Insights, limitations, proposed next steps and a record of key discussions.</p></article>
+   <article class="output"><strong>Continuing network</strong><p>A foundation for ongoing academic dialogue and future editions of the summit.</p></article>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="section-head"><div class="kicker">Guiding principles</div><h2>Ambitious, but evidence-led</h2><p>The summit will encourage innovation without overstating what is known or delegating professional responsibility to technology.</p></div>
+  <div class="principles">
+   <article class="principle"><strong>Evidence before hype</strong><p>Distinguish validated findings from hypotheses, prototypes and promotional claims.</p></article>
+   <article class="principle"><strong>Patient safety first</strong><p>Position AI and cognitive-support tools as aids, not substitutes for professional accountability.</p></article>
+   <article class="principle"><strong>Human oversight</strong><p>Protect clinical responsibility, informed judgement, privacy and appropriate governance.</p></article>
+   <article class="principle"><strong>Inclusive participation</strong><p>Welcome diverse geographic, professional, institutional and learner perspectives.</p></article>
+   <article class="principle"><strong>Measurable learning</strong><p>Use suitable, ethical methods to assess outcomes where programmes are evaluated.</p></article>
+   <article class="principle"><strong>Research integrity</strong><p>Respect privacy, approvals, transparent methods and honest reporting of limitations.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="cta">
+ <div class="wrap">
+  <div class="eyebrow">Join the conversation</div>
+  <h2>Help shape the doctor of tomorrow.</h2>
+  <p>FutureMed Intelligence invites prospective academic, clinical, research and technology partners to help shape the agenda, contribute expertise and explore evidence-informed collaboration.</p>
+  <p><strong>Presented by SSSGK Edutech Pvt. Ltd. &nbsp; | &nbsp; Powered by amAize</strong></p>
+  <div class="hero-actions" style="justify-content:center"><a class="btn btn-primary" href="#top">Back to top</a></div>
+ </div>
+</section>
+</main>
+<footer><div class="wrap foot"><div><strong>FUTUREMED INTELLIGENCE</strong><br>Global Summit on Clinical Reasoning, Cognitive Excellence &amp; AI</div><div>Concept-stage information. Date, venue, speakers, partners and registration details are to be announced.</div><div>© <span id="year"></span> FutureMed Intelligence</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
